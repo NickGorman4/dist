@@ -10,6 +10,20 @@
           href="/BMcD/favicon.png" />
 
     <style>
+        button{
+            background-color: #000000;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        iframe {
+            z-index:-1;
+        }
 /*        div {
             animation: fadeOutAnimations;
             animation-duration: 3s;
@@ -105,10 +119,18 @@
     <iframe id="showcase"
           src="./bundle/showcase.html?m=9baZ3r1v4dd&play=1&qs=1&log=0"
           width="100%"
-          height="97%"
+          height="95%"
           frameborder=”0”
+            position = "relative"
+            z-index = -1
           allowfullscreen>
     </iframe>
+      <button id = "clickMe6"
+                position = "relative";
+                z-index = 1;
+      >New Rack</button>
+      <button id = "clickMe7">Delete Rack</button>
+      <button id = "clickMe8">Rotate Selected</button>
 
   </p>
 <p id = "demo"
@@ -118,15 +140,12 @@
    >
 
 
-    <div>
-    <button id="clickMe4">New Box</button>
+    <div style = "text-align: center;">
+ <!--   <button id="clickMe4">New Box</button>
     <button id="clickMe5">Delete Selected Box</button>
     <button id="clickMe2">Appear</button>
     <button id="clickMe">Green</button>
-    <button id="clickMe3">Disappear</button>
-    <button id = "clickMe6">New Rack</button>
-    <button id = "clickMe7">Delete Rack</button>
-
+    <button id="clickMe3">Disappear</button>-->
 </div>
 
 </p>
